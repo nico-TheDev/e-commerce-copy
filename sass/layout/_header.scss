@@ -1,0 +1,25 @@
+.header{
+    background-image: linear-gradient(rgba(black,0.7)),
+                      url(/img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    .container{
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        align-content: center;
+    }
+
+    &__title{
+        width: calc(100% - 20rem);
+        font-size: 3rem;
+        text-transform: capitalize;
+    }
+
+    .desc{
+        color: rgba(white, 0.7);
+    }
+
+}

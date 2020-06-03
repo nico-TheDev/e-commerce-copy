@@ -1,0 +1,13 @@
+.about{
+    .container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+        gap: 2rem;
+    }
+
+    .btn{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

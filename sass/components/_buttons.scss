@@ -1,0 +1,36 @@
+%btn-shared{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    border: 2px solid white;
+    display: inline-block;
+    padding: 0.7em 1.1em;
+    border-radius: 3rem;
+    transition: 300ms;
+    &:hover{
+        background-color: white;
+        color: black;
+    }
+}
+
+.btn{
+    @extend %btn-shared;
+
+    &:link,
+    &:active{
+        @extend %btn-shared;
+    }
+
+
+    &--blue{
+        border-color: transparent !important;
+        color: white;
+        background-color: #3498db;
+
+        &:hover{
+            background-color: darken(#3498db,20%);
+            border-color: transparent;
+            color: white;
+        }
+    }
+}
